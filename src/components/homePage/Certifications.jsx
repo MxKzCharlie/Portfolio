@@ -10,10 +10,11 @@ import JSCert from '../../assets/img/JavaScript-Cert.jpg'
 import ReactCert from '../../assets/img/React-Cert.jpg'
 import PythonCert from '../../assets/img/Python-Cert.jpg'
 import SQLCert from '../../assets/img/SQL-Cert.jpg'
+import ScrollToTop from '../../utils/ScrollToTop'
 
 function Certifications() {
     const [xValue, setXValue] = useState(0);
-    const valueTranslate = window.innerWidth / 2;
+    const valueTranslate = window.innerWidth < 640 ? window.innerWidth : window.innerWidth / 2;
     const handleRight = () => {
         if((-5 * valueTranslate) === xValue){
             return null;
@@ -27,8 +28,11 @@ function Certifications() {
         setXValue(xValue + valueTranslate);
     };
 
+    console.log(valueTranslate);
+
     return (  
         <div className="background-opacity">
+            <ScrollToTop />
             <motion.div initial={{opacity: 0, scale: 0}}
             animate={{opacity: 1, scale: 1}}
             transition={{duration: .3}}

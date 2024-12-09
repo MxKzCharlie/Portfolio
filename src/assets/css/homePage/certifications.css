@@ -1,9 +1,9 @@
 .background-opacity {
-    @apply absolute w-full h-screen flex justify-center items-center z-30 bg-black/70;
+    @apply absolute w-full h-screen flex justify-center items-center z-30 bg-black/70 overflow-hidden;
 }
 
 .certifications-container {
-    @apply w-11/12 h-auto bg-[#F5F5F5] rounded-xl relative overflow-hidden
+    @apply w-full h-auto bg-[#F5F5F5] rounded-xl relative overflow-hidden
     sm:w-1/2;
 }
 
