@@ -1,5 +1,5 @@
 .background-opacity {
-    @apply absolute w-full h-screen flex justify-center items-center z-30 bg-black/70 overflow-hidden;
+    @apply w-full h-screen flex justify-center items-center z-30 bg-black/70 fixed;
 }
 
 .certifications-container {

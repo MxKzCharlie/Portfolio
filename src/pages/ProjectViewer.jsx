@@ -19,7 +19,6 @@ function ProjectViewer() {
             projectsList.push(project);
         }
     });
-    console.log(projectsList);
 
     project.technologies.forEach(technologie => {
         switch (technologie){
@@ -84,7 +83,7 @@ function ProjectViewer() {
                     <div className="other-projects">
                         {
                             projectsList.map(project => (
-                                <Link to={`/project/${project.id}`} state={{
+                                <Link key={project.id} to={`/project/${project.id}`} state={{
                                     selectedProject: project,
                                     projects: projects,
                                 }}
