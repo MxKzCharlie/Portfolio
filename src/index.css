@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+
+.sizeScreen {
+  width: calc(100vw - (100vw - 100%));
+}
+
+.background-pages {
+  @apply bg-neutral bg-gradient-to-br from-neutral from-50% via-primary to-base-200;
+}
+
+@tailwind utilities;
+
+

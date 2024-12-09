@@ -1,0 +1,65 @@
+.projectViewer {
+    @apply h-auto grid grid-rows-2 overflow-hidden
+    sm:grid-cols-2 sm:grid-rows-1 sm:grid sm:h-screen;
+}
+
+.video-technologies-section {
+    @apply w-full h-full flex flex-col items-center justify-center;
+}
+
+.title-project {
+    @apply w-full h-auto text-accent [text-shadow:_0_0_15px_#6A4FCE] text-center py-6 text-5xl font-titles
+    sm:text-6xl;
+}
+
+.video-project {
+    @apply w-5/6 h-auto shadow-md shadow-base-100 rounded-md mb-6;
+}
+
+.technologies {
+    @apply w-full h-auto text-accent [text-shadow:_0_0_15px_#6A4FCE] text-center text-3xl my-6 font-subtitles;
+}
+
+.container-icons-technologies {
+    @apply w-5/6 h-auto flex flex-wrap gap-8 justify-center font-general;
+}
+
+.tooltip-custom {
+    @apply tooltip tooltip-accent text-base-100;
+}
+
+.icon-technologie {
+    @apply w-10 h-auto text-base-100;
+}
+
+.description-projects-section {
+    @apply w-full h-full flex flex-col items-center justify-center;
+}
+
+.description-project {
+    @apply w-3/4 h-3/5 text-base-100 text-justify flex items-end font-general;
+}
+
+.links-project {
+    @apply w-auto h-auto text-secondary text-xl flex justify-center gap-2 hover:underline my-2 font-general;
+}
+
+.container-links-projects {
+    @apply w-full h-auto flex flex-col items-center my-5 gap-5;
+}
+
+.subtitle-other-projects {
+    @apply w-3/4 text-center text-accent text-3xl font-subtitles [text-shadow:_0_0_15px_#6A4FCE];
+}
+
+.other-projects {
+    @apply w-full h-auto flex flex-row items-center justify-around;
+}
+
+.link-to-project {
+    @apply w-auto h-auto bg-gradient-to-r from-transparent from-30% to-secondary rounded-full hover:scale-110 pr-5;
+}
+
+.name-project {
+    @apply text-base-100 font-general text-2xl;
+}

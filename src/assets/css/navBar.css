@@ -1,0 +1,20 @@
+.container-navbar {
+    @apply w-auto h-auto mx-4 absolute top-0 z-20 right-0
+    sm:right-4 sm:m-4;
+}
+
+.navbar {
+    @apply flex justify-end gap-10;
+}
+
+.icon-sun {
+    @apply w-10 h-10 text-base-100 cursor-pointer hover:brightness-150;
+}
+
+.icon-moon {
+    @apply w-7 h-7 text-base-100 cursor-pointer hover:brightness-150;
+}
+
+.option-navbar {
+    @apply text-xl text-base-100 font-general hover:brightness-150;
+}

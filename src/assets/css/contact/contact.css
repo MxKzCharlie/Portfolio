@@ -1,0 +1,38 @@
+.contact {
+    @apply h-screen flex flex-col items-center justify-center overflow-hidden;
+}
+
+.form-contact {
+    @apply w-3/4 h-auto rounded-xl shadow-md shadow-base-100 flex flex-col 
+    items-center justify-center py-5
+    sm:w-1/3 sm:h-[90%];
+}
+
+.title-contactme {
+    @apply w-full h-auto text-4xl text-accent [text-shadow:_0_0_15px_#6A4FCE] text-center py-3 font-titles
+    sm:text-5xl;
+}
+
+.text-contact {
+    @apply w-full h-auto text-base-100 text-base text-center font-subtitles
+    sm:text-lg;
+}
+
+.container-inputs {
+    @apply w-full h-auto flex flex-col items-center gap-4 py-6 ;
+}
+
+.labels {
+    @apply w-full h-auto flex flex-col items-center text-xl text-base-100 gap-1 font-subtitles;
+}
+
+.inputs {
+    @apply w-5/6 h-auto input input-secondary input-bordered input-lg 
+    text-base-100 text-center font-general bg-transparent;
+}
+
+.labels textarea {
+    @apply w-5/6 h-auto input input-secondary input-bordered input-lg 
+    text-base-100 font-general bg-transparent leading-tight py-2;
+}
+

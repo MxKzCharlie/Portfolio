@@ -1,0 +1,37 @@
+.background-opacity {
+    @apply absolute w-full h-screen flex justify-center items-center z-30 bg-black/70;
+}
+
+.certifications-container {
+    @apply w-11/12 h-auto bg-[#F5F5F5] rounded-xl relative overflow-hidden
+    sm:w-1/2;
+}
+
+.interection-buttons {
+    @apply w-full h-full absolute z-10;
+}
+
+.button-close {
+    @apply w-12 h-12 p-2 flex justify-center items-center rounded-full hover:bg-black/50 m-1;
+}
+
+.close-icon {
+    @apply w-full h-full text-black;
+}
+
+.left-icon {
+    @apply w-auto h-1/6 absolute top-1/2 left-0 cursor-pointer rounded-full hover:bg-black/50 text-black;
+}
+
+.right-icon {
+    @apply w-auto h-1/6 absolute top-1/2 right-0 cursor-pointer rounded-full hover:bg-black/50 text-black;
+}
+
+.certifications {
+    @apply w-full h-auto flex;
+}
+
+.certification {
+    @apply w-full h-auto rounded-t-xl;
+}
+
