@@ -1,8 +1,13 @@
 @tailwind base;
 @tailwind components;
 
+html, body {
+  height: 100%;
+}
+
 .sizeScreen {
   width: calc(100vw - (100vw - 100%));
+  min-height: 100vh;
 }
 
 .background-pages {

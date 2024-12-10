@@ -14,7 +14,7 @@ import ScrollToTop from '../../utils/ScrollToTop'
 
 function Certifications() {
     const [xValue, setXValue] = useState(0);
-    const valueTranslate = window.innerWidth < 640 ? window.innerWidth : window.innerWidth / 2;
+    const valueTranslate = window.innerWidth < 1024 ? window.innerWidth : window.innerWidth / 2;
     const handleRight = () => {
         if((-5 * valueTranslate) === xValue){
             return null;
@@ -27,8 +27,6 @@ function Certifications() {
         }
         setXValue(xValue + valueTranslate);
     };
-
-    console.log(valueTranslate);
 
     return (  
         <div className="background-opacity">

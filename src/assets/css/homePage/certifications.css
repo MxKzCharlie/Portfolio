@@ -4,7 +4,7 @@
 
 .certifications-container {
     @apply w-full h-auto bg-[#F5F5F5] rounded-xl relative overflow-hidden
-    sm:w-1/2;
+    lg:w-1/2 ;
 }
 
 .interection-buttons {

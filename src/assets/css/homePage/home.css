@@ -1,10 +1,11 @@
 .home {
-    @apply h-auto grid grid-rows-2 overflow-hidden
-    sm:grid-cols-2 sm:grid-rows-1 sm:grid sm:h-screen;
+    @apply flex flex-col items-center overflow-hidden
+    lg:flex-row lg:h-screen;
 }
 
 .section-projects { 
-    @apply w-full h-full flex flex-col items-center justify-center; 
+    @apply w-full h-full flex flex-col items-center justify-center py-10
+    lg:p-0; 
 }
 
 .section-title-projects {
@@ -12,7 +13,7 @@
 }
 
 .title-projects {
-    @apply w-full h-auto text-center font-subtitles 
+    @apply w-full h-auto text-center font-subtitles
     text-accent text-4xl [text-shadow:_0_0_12px_#6A4FCE]; 
 }
 

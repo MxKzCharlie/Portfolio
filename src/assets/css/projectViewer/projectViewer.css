@@ -1,10 +1,11 @@
 .projectViewer {
-    @apply h-auto grid grid-rows-2 overflow-hidden
-    sm:grid-cols-2 sm:grid-rows-1 sm:grid sm:h-screen;
+    @apply flex flex-col items-center overflow-hidden
+    lg:flex-row lg:h-screen;
 }
 
 .video-technologies-section {
-    @apply w-full h-full flex flex-col items-center justify-center;
+    @apply w-full h-full flex flex-col items-center justify-center pt-16
+    lg:p-0;
 }
 
 .title-project {
@@ -33,7 +34,8 @@
 }
 
 .description-projects-section {
-    @apply w-full h-full flex flex-col items-center justify-center;
+    @apply w-full h-full flex flex-col items-center justify-center py-10
+    sm:p-0;
 }
 
 .description-project {

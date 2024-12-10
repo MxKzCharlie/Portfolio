@@ -1,5 +1,6 @@
 .aboutMe {
-    @apply w-full h-full flex flex-col items-center;
+    @apply w-full h-full flex flex-col items-center pt-16 gap-10
+    lg:p-0 lg:gap-0;
 }
 
 .container-title {
@@ -9,19 +10,19 @@
 
 .title {
     @apply font-titles text-accent [text-shadow:_0_0_12px_#6A4FCE] text-6xl text-center
-    sm:text-7xl sm:text-left;
+    sm:text-7xl lg:text-left;
 }
 
 .container-info-social {
-    @apply w-full h-1/2 flex flex-col items-center;
+    @apply w-full h-1/2 flex flex-col items-center gap-6;
 }
 
 .info-aboutMe {
-    @apply w-full h-full flex items-center justify-center m-10
+    @apply w-full h-full flex items-center justify-center 
     sm:m-0;
 }
 
 .info {
     @apply w-5/6 h-auto text-base-100 font-general text-justify
-    sm:w-2/4;
+    lg:w-2/4 sm:w-4/6; 
 }
