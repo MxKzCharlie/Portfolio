@@ -59,7 +59,8 @@ function ProjectViewer() {
             <motion.div initial={{x: -175}} animate={{x: 0}} transition={{duration: 1}}
             className="video-technologies-section">
                 <h1 className="title-project">{project.name}</h1>
-                <video className="video-project" autoPlay loop muted src={project.video} />
+                <video className="video-project" autoPlay loop muted src={project.video} 
+                loading="lazy" />
                 <h2 className="technologies">Tecnologías</h2>
                 <div className="container-icons-technologies">
                     {

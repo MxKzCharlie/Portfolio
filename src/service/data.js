@@ -1,6 +1,6 @@
-import videoNotesNET from '../assets/video/notesNET.mp4'
-import videoCafeRouse from '../assets/video/cafeRouse.mp4'
-import videoColortron from '../assets/video/colortron.mp4'
+import videoNotesNET from '../assets/video/notesNET.webm'
+import videoCafeRouse from '../assets/video/cafeRouse.webm'
+import videoColortron from '../assets/video/colortron.webm'
 
 export const dataProjects = [
     {
