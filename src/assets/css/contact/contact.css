@@ -36,3 +36,18 @@
     text-base-100 font-general bg-transparent leading-tight py-2;
 }
 
+.button-submit {
+    @apply btn btn-secondary my-3;
+}
+
+.spin-loading {
+    @apply loading loading-spinner loading-md text-base-100 my-3;
+}
+
+.correct-shipping {
+    @apply w-full h-auto font-general text-green-500 text-center my-3;
+}
+
+.failed-shipment {
+    @apply w-full h-auto font-general text-red-500 text-center my-3;
+}
