@@ -48,7 +48,7 @@ export const dataProjects = [
     {
         id: "imprenta-colortron",
         name: "COLORTRON",
-        url: "",
+        url: "https://colortron-frontend-project.netlify.app",
         video: videoColortron,
         description: `
             Diseñé y desarrollé una página web informativa y funcional para una imprenta, que destaca 
