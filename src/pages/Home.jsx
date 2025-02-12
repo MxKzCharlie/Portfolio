@@ -53,7 +53,7 @@ function Home() {
                 animate={{x: 0, opacity: 1}} 
                 transition={{duration: 1.5}} 
                 className="container-imgs">
-                    <div className="container-img-decoration"></div>
+                    <div className="container-img-decoration bg-decoration"></div>
                     <img className="img-lightness-blue" src={elipse} alt="lightness-blue" />
                 </motion.div>
             </div>

@@ -20,9 +20,6 @@ export default {
       backgroundColor: {
         "blueCustom": "#001229",
       },
-      backgroundImage: {
-        "bgDecoration": "url(./decoration-photo.jpg)",
-      },
     },
   },
   plugins: [
