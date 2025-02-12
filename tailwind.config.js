@@ -21,7 +21,7 @@ export default {
         "blueCustom": "#001229",
       },
       backgroundImage: {
-        "bgDecoration": "url(src/assets/img/horizontal-decoration.jpg)",
+        "bgDecoration": "url(./decoration-photo.jpg)",
       },
     },
   },
