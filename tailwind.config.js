@@ -21,8 +21,7 @@ export default {
         "blueCustom": "#001229",
       },
       backgroundImage: {
-        "bgDecoration": "url(src/assets/img/temporary-img.png)",
-        "bgProjectTest": "url(src/assets/img/notesNET.png)",
+        "bgDecoration": "url(src/assets/img/decoration-photo.png)",
       },
     },
   },
