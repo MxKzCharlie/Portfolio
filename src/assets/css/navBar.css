@@ -1,20 +1,10 @@
-.container-navbar {
-    @apply w-auto h-auto mx-4 absolute top-0 z-20 right-0
-    sm:right-4 sm:m-4;
+.navBar {
+    @apply w-full h-10 bg-transparent flex items-center justify-around font-general text-white  absolute
+    z-50 cursor-pointer text-sm mt-4
+    sm:w-1/2 sm:text-lg sm:top-2 sm:left-1/4 sm:mt-0
+    lg:w-1/3 lg:left-1/3;
 }
 
-.navbar {
-    @apply flex justify-end gap-10;
-}
-
-.icon-sun {
-    @apply w-10 h-10 text-base-100 cursor-pointer hover:brightness-150;
-}
-
-.icon-moon {
-    @apply w-7 h-7 text-base-100 cursor-pointer hover:brightness-150;
-}
-
-.option-navbar {
-    @apply text-xl text-base-100 font-general hover:brightness-150;
+.options-navBar {
+    @apply hover:[text-shadow:_0_0_10px_#FFFFFF] hover:scale-110 duration-200 ease-linear;
 }

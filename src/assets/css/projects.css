@@ -1,0 +1,53 @@
+.projects {
+    @apply w-full h-auto bg-black flex flex-col items-center;
+}
+
+.title-projects {
+    @apply w-full h-fit text-center text-white text-5xl font-titles my-8
+    sm:text-7xl;
+}
+
+.options-type-projects {
+    @apply w-full h-auto flex items-center justify-center gap-8;
+}
+
+.option-type {
+    @apply text-white text-xl font-general py-1 cursor-pointer
+    sm:text-3xl;
+}
+
+.active-tab {
+    @apply border-b-2 border-white border-solid;
+}
+
+.container-cards {
+    @apply w-full h-auto flex flex-wrap justify-around py-14 overflow-hidden gap-8
+    lg:gap-0;
+}
+
+.card-project {
+    @apply w-[20rem] h-[25rem] bg-black flex justify-center items-center border-white border-solid
+    rounded-xl overflow-x-hidden relative overflow-hidden hover:border-2 z-[1]
+    sm:w-3/4 sm:h-cardProject
+    lg:w-cardProject;
+}
+
+.link-page-project {
+    @apply w-7 h-7 absolute z-40 right-3 top-3 hover:scale-110 duration-200 ease-out;
+}
+
+.container-info-project {
+    @apply w-full h-full flex flex-col items-center gap-4 z-20 text-white font-general;
+}
+
+.title-project {
+    @apply w-full h-1/5 text-5xl flex justify-start items-end px-5;
+}
+
+.description-project {
+    @apply w-full h-4/5 flex items-end p-5;
+}
+
+.img-card {
+    @apply w-auto h-full object-cover absolute z-10 opacity-25;
+}

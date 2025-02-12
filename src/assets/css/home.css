@@ -1,0 +1,54 @@
+.home {
+    @apply w-full h-hS bg-black flex overflow-hidden flex-col
+    sm:flex-row; 
+}
+
+.container-text {
+    @apply w-full h-full flex flex-col items-center justify-center gap-10
+    sm:w-1/2 sm:h-full;
+}
+
+.title-profession{ 
+    @apply text-white text-7xl font-titles text-center 
+    leading-[85px] sm:text-left
+    lg:text-8xl; 
+}
+
+.social-work-cv {
+    @apply w-full h-auto flex flex-col items-center justify-center gap-2; 
+}
+
+.social-work {
+    @apply w-4/6 h-auto flex justify-center gap-2;
+}
+
+.icons-social-work {
+    @apply w-auto h-12 text-gray-700/50 hover:scale-110 duration-100 ease-in;
+}
+
+.stars {
+    @apply w-auto h-auto flex justify-center items-center gap-1;
+}
+
+.icon-star {
+    @apply w-7 h-7 text-yellow-400;
+}
+
+.button-cv {
+    @apply w-4/6 h-14 text-white text-3xl font-general bg-blueCustom rounded-full text-center
+    hover:scale-105 duration-300 ease-in-out;
+}
+
+.container-imgs {
+    @apply w-1/2 h-full hidden justify-center items-center relative
+    sm:flex; 
+}
+
+.container-img-decoration {
+    @apply w-2/3 h-2/3 bg-white z-10 rounded-2xl bg-bgDecoration bg-center
+    lg:w-1/2 lg:h-3/4; 
+}
+
+.img-lightness-blue {
+    @apply w-full h-auto absolute; 
+}

@@ -1,72 +1,71 @@
-import videoNotesNET from '../assets/video/notesNET.webm'
-import videoCafeRouse from '../assets/video/cafeRouse.webm'
-import videoColortron from '../assets/video/colortron.webm'
+import notesNetImg from '../assets/img/notesNET.png'
+import cafeRouseImg from '../assets/img/cafeRouse.png'
+import colortronImg from '../assets/img/colortron.png'
+import temporaryImg from '../assets/img/whitout-project.png'
 
-export const dataProjects = [
+export const dataReactProj = [
     {
         id: "notes-net",
         name: "NotesNET",
-        url: "https://mxkzcharlieproject.netlify.app/",
-        video: videoNotesNET,
+        urlSite: "https://mxkzcharlieproject.netlify.app/",
+        img: notesNetImg,
         description: `
-            Una aplicación web para gestionar notas personales, desarrollada como práctica de integración 
-            de frontend y backend. La aplicación permite a los usuarios crear, editar, y eliminar notas, 
-            con autenticación de usuario y persistencia de datos.
-            Lo que aprendí: Configuración de APIs RESTful, manejo de estado en React, y cómo conectar el 
-            frontend con el backend de manera eficiente.
-            Problema resuelto: Los usuarios pueden mantener sus notas organizadas en un entorno seguro y 
-            accesible desde cualquier dispositivo.`,
-        technologies: [
-            "React",
-            "Tailwindcss",
-            "Python",
-            "Django",
-        ],
+            Aplicación web de notas con autenticación y persistencia de datos. 
+            Aprendí APIs RESTful, manejo de estado en React y conexión eficiente 
+            frontend-backend. Soluciona la organización de notas accesibles desde 
+            cualquier dispositivo.`,
+        time: .5, 
     },
     {
         id: "cafe-rouse",
         name: "Café Rouse",
-        url: "https://caferouse.com",
-        video: videoCafeRouse,
+        urlSite: "https://caferouse.com",
+        img: cafeRouseImg,
         description: `
-            Diseñé y desarrollé una página web responsiva para una cafetería que incluye una tienda en 
-            línea con opciones de pedidos personalizados. Implementé funcionalidades como variaciones 
-            de productos, métodos de pago en línea con Stripe y notificaciones con Twilio.
-            Lo que aprendí: Gestión de integraciones con APIs externas, uso avanzado de componentes React 
-            y mejora de la experiencia del usuario en la tienda en línea.
-            Problema resuelto: La cafetería ahora tiene un canal digital para gestionar pedidos y pagos, 
-            mejorando su alcance y eficiencia operativa.`,
-        technologies: [
-            "React",
-            "Tailwindcss",
-            "Express",
-            "Node.js",
-            "Twilio",
-            "Stripe",
-        ],
+            Diseñé y desarrollé una tienda en línea responsiva con 
+            pedidos personalizados, pagos con Stripe y notificaciones 
+            con Twilio. Aprendí integración de APIs, React avanzado 
+            y UX en e-commerce. Soluciona la gestión digital de pedidos 
+            y pagos, mejorando alcance y eficiencia.`,
+        time: 1, 
     },
     {
         id: "imprenta-colortron",
         name: "COLORTRON",
-        url: "https://colortron-frontend-project.netlify.app",
-        video: videoColortron,
+        urlSite: "https://colortron-frontend-project.netlify.app",
+        img: colortronImg,
         description: `
-            Diseñé y desarrollé una página web informativa y funcional para una imprenta, que destaca 
-            los productos y servicios ofrecidos, como etiquetas, volantes, tarjetas, y personalización 
-            de productos. La página incluye un slider dinámico para mostrar los productos y una funcion
-            para que los usuarios arrastren imagenes a un recuadro y puedan subir sus archivos para
-            productos personalizados, y envio de correos al cotizar y comprar un producto. 
-            Lo que aprendí: Creación de interfaces responsivas, integración de sliders dinámicos, y 
-            manejo de subida de imágenes en aplicaciones web.
-            Problema resuelto: La imprenta ahora tiene una plataforma de pedidos en linea, haciendo que
-            su negocio llegue mas gente de forma digital y rapida. 
-        `,
-        technologies: [
-            "React",
-            "Tailwindcss",
-            "Express",
-            "Node.js",
-            "Stripe",
-        ],
+            Creé una web informativa con slider dinámico, subida de 
+            imágenes y envío de cotizaciones. Aprendí UI responsiva, 
+            integración de sliders y manejo de archivos. Soluciona la 
+            digitalización de pedidos, ampliando el alcance del negocio.`,
+        time: 1.5, 
     },
 ]
+
+export const dataWordPressProj = [
+    {
+        id: "proyecto-1",
+        name: "Proyecto 1",
+        urlSite: "https://www.google.com",
+        img: temporaryImg,
+        description: "Proximamente...",
+        time: .5, 
+    },
+    {
+        id: "proyecto-2",
+        name: "Proyecto 2",
+        urlSite: "https://www.google.com",
+        img: temporaryImg,
+        description: "Proximamente...",
+        time: 1, 
+    },
+    {
+        id: "proyecto-3",
+        name: "Proyecto 3",
+        urlSite: "https://www.google.com",
+        img: temporaryImg,
+        description: "Proximamente...",
+        time: 1.5, 
+    },
+];

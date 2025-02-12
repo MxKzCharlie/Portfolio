@@ -1,10 +1,16 @@
-import '../assets/css/homePage/home.css'
-import { dataProjects } from '../service/data'
-import { FaArrowRightLong } from "react-icons/fa6"
-import { Link, Outlet } from 'react-router'
-import { motion } from 'motion/react'
+import '../assets/css/home.css'
+import elipse from '../assets/img/Ellipse-33.png'
 import NavBar from '../components/NavBar'
-import AboutMe from '../components/homePage/AboutMe'
+import AboutMe from '../components/AboutMe'
+import Projects from '../components/Projects'
+import Contact from '../components/Contact'
+import RightsReserved from '../components/RightsReserved'
+import { TbBrandFiverr } from "react-icons/tb"
+import { SiUpwork } from "react-icons/si"
+import { IoStarSharp } from "react-icons/io5";
+import { Link } from 'react-router'
+import { linkFi } from '../utils/links'
+import { motion } from 'motion/react'
 
 function Home() {
     const handleDownload = () => {
@@ -14,34 +20,48 @@ function Home() {
         link.click();
     };
 
-    return ( 
-        <div className="home sizeScreen background-pages">
-            <Outlet />
+    return (
+        <>
             <NavBar />
-            <AboutMe />
-            <motion.div initial={{x: 175}} animate={{x: 0}} transition={{duration: 1}}
-            className="section-projects">
-                <div className="section-title-projects">
-                    <h2 className="title-projects">PROYECTOS</h2>
-                    <div className="container-projects">
-                        {dataProjects.map(project => (
-                            <Link to={`/project/${project.id}`} state={{
-                                selectedProject: project,
-                                projects: dataProjects,
-                            }}
-                            key={project.id} className="option-project group">
-                                <span className="group-hover:scale-110">{project.name}</span>
-                                <FaArrowRightLong className="arrow-icon group-hover:block"/>
-                            </Link>  
-                        ))}
+            <div className="home">
+                <motion.div initial={{x: -100, opacity: 0}} 
+                animate={{x: 0, opacity: 1}} 
+                transition={{duration: 1.5}}
+                className="container-text">
+                    <h1 className="title-profession">Web<br />Developer</h1>
+                    <div className="social-work-cv">
+                        <div className="social-work">
+                            <div className="stars">
+                                <IoStarSharp className="icon-star"/>
+                                <IoStarSharp className="icon-star"/>
+                                <IoStarSharp className="icon-star"/>
+                                <IoStarSharp className="icon-star"/>
+                                <IoStarSharp className="icon-star"/>
+                            </div>
+                            <Link to={linkFi} target="_blank">
+                                <TbBrandFiverr className="icons-social-work"/>
+                            </Link>
+                            <Link to={linkFi} target="_blank">
+                                <SiUpwork className="icons-social-work"/>
+                            </Link>
+                        </div>
+                        
+                        <button onClick={handleDownload} className="button-cv">Descargar CV</button>
                     </div>
-                </div>
-                <div className="container-buttons">
-                    <button  onClick={handleDownload} className="button-cv-cert">Descargar CV</button>
-                    <Link to="certifications/" className="button-cv-cert">Certificaciones</Link>
-                </div>
-            </motion.div>
-        </div>
+                </motion.div>
+                <motion.div initial={{x: 100, opacity: 0}} 
+                animate={{x: 0, opacity: 1}} 
+                transition={{duration: 1.5}} 
+                className="container-imgs">
+                    <div className="container-img-decoration"></div>
+                    <img className="img-lightness-blue" src={elipse} alt="lightness-blue" />
+                </motion.div>
+            </div>
+            <AboutMe />
+            <Projects />
+            <Contact />
+            <RightsReserved />
+        </> 
     );
 }
     
